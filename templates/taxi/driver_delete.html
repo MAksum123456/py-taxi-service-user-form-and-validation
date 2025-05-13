@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-  <p> You really want to remove the driver? {{ objects }}</p>
+  <p> You really want to remove the driver? {{ object }}</p>
   <form action="" method="post">
     {% csrf_token %}
     <input type="submit" class="btn badge-danger" value="Yes, delete">
